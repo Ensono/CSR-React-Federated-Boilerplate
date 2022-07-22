@@ -1,0 +1,17 @@
+{
+  "name": "next-warehouse-poc",
+  "version": "1.0.0",
+  "description": "A Webpack Module Federation Case In React  ·",
+  "main": "index.js",
+  "private": true,
+  "workspaces": ["./lib-app", "./component-app", "./main-app"],
+  "scripts": {
+    "start": "concurrently 'cd ./component-app && yarn start' 'cd ./lib-app && yarn start' 'cd ./main-app && yarn start'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "7.2.2"
+  }
+}
