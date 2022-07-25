@@ -151,7 +151,10 @@ var Button = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var type = this.props.type || 'primary';
       return /*#__PURE__*/React.createElement("button", {
-        style: styleMapping[type]
+        style: styleMapping[type],
+        onClick: function onClick() {
+          return console.log('clicked button');
+        }
       }, type, " Button");
     }
   }]);

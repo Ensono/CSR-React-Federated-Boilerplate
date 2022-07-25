@@ -1,8 +1,8 @@
 import React from 'runtime-library/react';
-import Logo from './src/Logo';
-import Dialog from './src/Dialog';
+import Logo from './Logo';
+import Dialog from './Dialog';
 import Button from 'runtime-library/Button';
-export default class App extends React.Component {
+export class SampleMFE extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,3 +36,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default SampleMFE

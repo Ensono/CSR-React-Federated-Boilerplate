@@ -14,6 +14,7 @@ module.exports = {
       name: 'runtime_library',
       filename: 'remoteEntry.js',
       exposes: {
+        './Tooltip': '@next/tooltip',
         './Button': '@next/button',
         './react': 'react',
         './react-dom': 'react-dom',

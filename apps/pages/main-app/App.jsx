@@ -1,7 +1,7 @@
 import React from 'runtime-library/react';
 import Button from 'runtime-library/Button';
-import Dialog from 'sample_mfe/Dialog';
-import ToolTip from 'sample_mfe/ToolTip';
+import ToolTip from 'runtime-library/Tooltip';
+import SampleMFE from 'sample-mfe/SampleMFE';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,21 +25,20 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Open Dev Tool And Focus On Network,checkout resources details</h1>
-        <p>
-          react、react-dom js files hosted on <strong>runtime-library</strong>
-        </p>
-        <p>
-          components hosted on <strong>sample_mfe</strong>
-        </p>
-        <h4>Buttons:</h4>
-        <Button type="primary" />
-        <Button type="warning" />
-        <h4>Dialog:</h4>
-        <button onClick={this.handleClick}>click me to open Dialog</button>
-        <Dialog switchVisible={this.handleSwitchVisible} visible={this.state.dialogVisible} />
-        <h4>hover me please!</h4>
-        <ToolTip content="hover me please" message="Hello,world!" />
+        <div className="mfe-container" style={{ border: '1px solid hotpink' }}>
+          <p>
+            react、react-dom, Tooltip and Button js files hosted on <strong>runtime-library</strong>
+          </p>
+          <Button type="primary" />
+          <Button type="warning" />
+          <ToolTip content="hover me please" message="Hello,world!" />
+        </div>
+        <div className="mfe-container" style={{ border: '1px solid hotpink' }}>
+          <p>
+            MFE hosted on <strong>sample_mfe</strong>
+          </p>
+          <SampleMFE />
+        </div>
       </div>
     );
   }
