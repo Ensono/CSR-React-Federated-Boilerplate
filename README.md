@@ -28,6 +28,8 @@ It is a pure host.
 
 # how to use
 
+requires: Node >16.15.1
+
 - `npm install`
 - `npm run start`
 
