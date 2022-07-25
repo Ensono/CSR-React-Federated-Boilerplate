@@ -34,16 +34,15 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'component_app',
+      name: 'sample_mfe',
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button.jsx',
         './Dialog': './src/Dialog.jsx',
         './Logo': './src/Logo.jsx',
         './ToolTip': './src/ToolTip.jsx',
       },
       remotes: {
-        'lib-app': 'lib_app@http://localhost:3000/remoteEntry.js',
+        'runtime-library': 'runtime_library@http://localhost:3000/remoteEntry.js',
       },
     }),
     new HtmlWebpackPlugin({

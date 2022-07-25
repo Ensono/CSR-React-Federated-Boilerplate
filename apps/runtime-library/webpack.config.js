@@ -11,9 +11,10 @@ module.exports = {
   module: {},
   plugins: [
     new ModuleFederationPlugin({
-      name: 'lib_app',
+      name: 'runtime_library',
       filename: 'remoteEntry.js',
       exposes: {
+        './Button': '@next/button',
         './react': 'react',
         './react-dom': 'react-dom',
       },

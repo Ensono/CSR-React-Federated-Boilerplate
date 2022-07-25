@@ -1,7 +1,7 @@
-import React from 'lib-app/react';
-import Button from 'component-app/Button';
-import Dialog from 'component-app/Dialog';
-import ToolTip from 'component-app/ToolTip';
+import React from 'runtime-library/react';
+import Button from 'runtime-library/Button';
+import Dialog from 'sample_mfe/Dialog';
+import ToolTip from 'sample_mfe/ToolTip';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -27,10 +27,10 @@ export default class App extends React.Component {
       <div>
         <h1>Open Dev Tool And Focus On Network,checkout resources details</h1>
         <p>
-          react、react-dom js files hosted on <strong>lib-app</strong>
+          react、react-dom js files hosted on <strong>runtime-library</strong>
         </p>
         <p>
-          components hosted on <strong>component-app</strong>
+          components hosted on <strong>sample_mfe</strong>
         </p>
         <h4>Buttons:</h4>
         <Button type="primary" />

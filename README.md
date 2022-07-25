@@ -6,21 +6,21 @@ A complete Webpack Module Federation Case with React.
 
 # project directory
 
-## lib-app
+## runtime-library
 
 It is a low-level or basic app, which exposes libraries like `react`, `react-dom`.
 
 It is a pure `remote`
 
-## component-app
+## sample_mfe
 
-It is a middle-level app, which depends on modules exposed from `lib-app` : `react` ,`react-dom`. In the meantime, it also exposes components: `Dialog`, `Button` to another app called `main-app`.
+It is a middle-level app, which depends on modules exposed from `runtime-library` : `react` ,`react-dom`. In the meantime, it also exposes components: `Dialog`, `Button` to another app called `main-app`.
 
 It is both host and remote.
 
 ## main-app
 
-the top-level app, which depends on `lib-app` and `component-app`.
+the top-level app, which depends on `runtime-library` and `sample_mfe`.
 
 It is a pure host.
 

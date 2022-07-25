@@ -1,0 +1,17 @@
+{
+  "name": "@next/button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "module": "./lib/index.es.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest",
+    "build-lib": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC"
+}

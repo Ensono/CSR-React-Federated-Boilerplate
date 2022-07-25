@@ -32,8 +32,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'main_app',
       remotes: {
-        'lib-app': 'lib_app@http://localhost:3000/remoteEntry.js',
-        'component-app': 'component_app@http://localhost:3001/remoteEntry.js',
+        'runtime-library': 'runtime_library@http://localhost:3000/remoteEntry.js',
+        'sample_mfe': 'sample_mfe@http://localhost:3001/remoteEntry.js',
       },
     }),
     new HtmlWebpackPlugin({
