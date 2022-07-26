@@ -117,4 +117,4 @@ buildServer
 /**/*/.prettierrc
 
 # Packages
-packages/**/lib
+lib
