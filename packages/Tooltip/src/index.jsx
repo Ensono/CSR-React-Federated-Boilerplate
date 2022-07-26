@@ -1,13 +1,16 @@
 import React from 'react';
-export default class ToolTip extends React.Component {
+import { TooltipComponent } from './components';
+export class Tooltip extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div className="tool-tip" data-content={this.props.message}>
+      <TooltipComponent data-content={this.props.message}>
         {this.props.content}
-      </div>
+      </TooltipComponent>
     );
   }
 }
+
+export default Tooltip

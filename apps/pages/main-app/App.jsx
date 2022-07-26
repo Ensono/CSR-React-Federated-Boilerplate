@@ -1,6 +1,6 @@
-import React from 'runtime-library/react';
+import React from 'runtime-library/lib/react';
 import Button from 'runtime-library/Button';
-import ToolTip from 'runtime-library/Tooltip';
+import Tooltip from 'runtime-library/Tooltip';
 import SampleMFE from 'sample-mfe/SampleMFE';
 export default class App extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export default class App extends React.Component {
           </p>
           <Button type="primary" />
           <Button type="warning" />
-          <ToolTip content="hover me please" message="Hello,world!" />
+          <Tooltip content="hover me please" message="Hello,world!" />
         </div>
         <div className="mfe-container" style={{ border: '1px solid hotpink' }}>
           <p>

@@ -1,4 +1,4 @@
-import React from 'runtime-library/react';
+import React from 'runtime-library/lib/react';
 import Logo from './Logo';
 import Dialog from './Dialog';
 import Button from 'runtime-library/Button';

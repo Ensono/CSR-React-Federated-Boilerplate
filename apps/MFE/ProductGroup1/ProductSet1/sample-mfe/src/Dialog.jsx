@@ -1,4 +1,4 @@
-import React from 'runtime-library/react';
+import React from 'runtime-library/lib/react';
 const wrapperStyle = {
   position: 'fixed',
   top: 0,

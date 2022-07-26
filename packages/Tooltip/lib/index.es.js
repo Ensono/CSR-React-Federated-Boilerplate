@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from '@emotion/styled';
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -108,28 +109,42 @@ function _createSuper(Derived) {
   };
 }
 
-var ToolTip = /*#__PURE__*/function (_React$Component) {
-  _inherits(ToolTip, _React$Component);
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-  var _super = _createSuper(ToolTip);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
 
-  function ToolTip(props) {
-    _classCallCheck(this, ToolTip);
+var _templateObject;
+var TooltipComponent = styled.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    background-color: #fff;\n    padding: 10px 16px;\n    border: 1px solid #dcdfe6;\n    display: inline-block;\n    cursor: pointer;\n    border-radius: 4px;\n    position: relative;\n    &:before {\n        content: attr(data-content);\n        max-width: 100%;\n        box-sizing: border-box;\n        position: absolute;\n        background-color: #303133;\n        color: #fff;\n        font-size: 12px;\n        border-radius: 4px;\n        padding: 10px;\n        left: 50%;\n        bottom:100%;\n        transform: translate(-50%,-10px);\n        display: none;\n    }\n    &:after{\n        display: none;\n        content: \"\";\n        border: 6px solid transparent;\n        border-top-color:#303133;\n        position: absolute;\n        left: 50%;\n        bottom:100%;\n        transform: translate(-50%,2px);\n    }\n    &:hover::after, &:hover::before {\n        display: block;\n    }\n"])));
+
+var Tooltip = /*#__PURE__*/function (_React$Component) {
+  _inherits(Tooltip, _React$Component);
+
+  var _super = _createSuper(Tooltip);
+
+  function Tooltip(props) {
+    _classCallCheck(this, Tooltip);
 
     return _super.call(this, props);
   }
 
-  _createClass(ToolTip, [{
+  _createClass(Tooltip, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
-        className: "tool-tip",
+      return /*#__PURE__*/React.createElement(TooltipComponent, {
         "data-content": this.props.message
       }, this.props.content);
     }
   }]);
 
-  return ToolTip;
+  return Tooltip;
 }(React.Component);
 
-export { ToolTip as default };
+export { Tooltip, Tooltip as default };

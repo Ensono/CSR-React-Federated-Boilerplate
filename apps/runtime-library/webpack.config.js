@@ -16,8 +16,8 @@ module.exports = {
       exposes: {
         './Tooltip': '@next/tooltip',
         './Button': '@next/button',
-        './react': 'react',
-        './react-dom': 'react-dom',
+        './lib/react': 'react',
+        './lib/react-dom': 'react-dom',
       },
     }),
   ],

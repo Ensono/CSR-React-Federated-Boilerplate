@@ -30,7 +30,7 @@ export default class Button extends React.Component {
     super(props);
   }
   render() {
-    var type = this.props.type || 'primary';
+    const type = this.props.type || 'primary';
     return <button style={styleMapping[type]} onClick={()=>console.log('clicked button')}>{type} Button</button>;
   }
 }
