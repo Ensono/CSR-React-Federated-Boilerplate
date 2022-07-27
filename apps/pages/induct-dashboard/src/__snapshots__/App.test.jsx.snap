@@ -51,6 +51,9 @@ exports[`induct-dashboard:  App should match the snapshot 1`] = `
 }
 
 <div>
+    <div>
+      Navigation
+    </div>
     <div
       class="mfe-container"
       style="border: 1px solid hotpink;"

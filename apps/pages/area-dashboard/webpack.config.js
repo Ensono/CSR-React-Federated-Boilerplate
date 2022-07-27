@@ -35,6 +35,7 @@ module.exports = {
             remotes: {
                 "runtime-library": "runtime_library@http://localhost:3000/remoteEntry.js",
                 "sample-mfe": "sample_mfe@http://localhost:3001/remoteEntry.js",
+                nav: "nav@http://localhost:3005/remoteEntry.js",
             },
         }),
         new HtmlWebpackPlugin({

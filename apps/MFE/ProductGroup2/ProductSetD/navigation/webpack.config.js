@@ -7,7 +7,7 @@ module.exports = {
     mode: "development",
     devtool: "hidden-source-map",
     output: {
-        publicPath: "http://localhost:3004/",
+        publicPath: "http://localhost:3005/",
         clean: true,
     },
     resolve: {
@@ -18,6 +18,10 @@ module.exports = {
             {
                 test: /\.(jpg|png|gif|jpeg)$/,
                 loader: "url-loader",
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
             },
             {
                 test: /\.jsx?$/,
@@ -31,11 +35,13 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: "induct_dashboard",
+            name: "nav",
+            filename: "remoteEntry.js",
+            exposes: {
+                "./Navigation": "./src/compositions/Navigation.jsx",
+            },
             remotes: {
                 "runtime-library": "runtime_library@http://localhost:3000/remoteEntry.js",
-                "sample-mfe": "sample_mfe@http://localhost:3001/remoteEntry.js",
-                nav: "nav@http://localhost:3005/remoteEntry.js",
             },
         }),
         new HtmlWebpackPlugin({

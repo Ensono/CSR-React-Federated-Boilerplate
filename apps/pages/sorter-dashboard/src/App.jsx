@@ -2,6 +2,7 @@ import React from "runtime-library/lib/react"
 import Button from "runtime-library/Button"
 import Tooltip from "runtime-library/Tooltip"
 import SampleMFE from "sample-mfe/SampleMFE"
+import Navigation from "nav/Navigation"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        <Navigation appName="Sorter Dashboard" />
         <div className="mfe-container" style={{border: "1px solid hotpink"}}>
           <p>
             react、react-dom, Tooltip and Button js files hosted on <strong>runtime-library</strong>

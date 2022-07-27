@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header:  Header should match the snapshot for type = primary 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #f4dbca;
+  padding: 10px 16px;
+  border: 1px solid #dcdfe6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

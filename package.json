@@ -22,10 +22,14 @@
     "area-dashboard:test": "npm run test -w=area-dashboard",
     "sorter-dashboard:start": "npm run start -w=sorter-dashboard",
     "sorter-dashboard:test": "npm run test -w=sorter-dashboard",
+    "induct-dashboard:start": "npm run start -w=induct-dashboard",
+    "induct-dashboard:test": "npm run test -w=induct-dashboard",
     "sample-mfe:start": "npm run start -w=sample-mfe",
     "sample-mfe:test": "npm run test -w=sample-mfe",
+    "navigation:start": "npm run start -w=navigation",
+    "navigation:test": "npm run test -w=navigation",
     "services:start": "npm run start -w=mocked-services",
-    "start": "concurrently 'npm run runtime-library:start' 'npm run induct-dashboard:start' 'npm run sorter-dashboard:start' 'npm run area-dashboard:start' 'npm run sample-mfe:start' 'npm run services:start'",
+    "start": "concurrently -n w: npm:*:start",
     "prepare": "npx is-ci || husky install",
     "lint-staged": "lint-staged",
     "test": "npm run test -ws -if-present"
@@ -71,6 +75,7 @@
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
