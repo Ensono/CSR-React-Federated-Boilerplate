@@ -20,10 +20,12 @@
     "runtime-library:test": "npm run test -w=runtime-library",
     "area-dashboard:start": "npm run start -w=area-dashboard",
     "area-dashboard:test": "npm run test -w=area-dashboard",
+    "sorter-dashboard:start": "npm run start -w=sorter-dashboard",
+    "sorter-dashboard:test": "npm run test -w=sorter-dashboard",
     "sample-mfe:start": "npm run start -w=sample-mfe",
     "sample-mfe:test": "npm run test -w=sample-mfe",
     "services:start": "npm run start -w=mocked-services",
-    "start": "concurrently 'npm run runtime-library:start' 'npm run area-dashboard:start' 'npm run sample-mfe:start' 'npm run services:start'",
+    "start": "concurrently 'npm run runtime-library:start' 'npm run induct-dashboard:start' 'npm run sorter-dashboard:start' 'npm run area-dashboard:start' 'npm run sample-mfe:start' 'npm run services:start'",
     "prepare": "npx is-ci || husky install",
     "lint-staged": "lint-staged",
     "test": "npm run test -ws -if-present"
