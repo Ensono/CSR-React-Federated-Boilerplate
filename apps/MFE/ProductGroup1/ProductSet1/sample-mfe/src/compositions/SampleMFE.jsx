@@ -1,6 +1,6 @@
 import React from 'runtime-library/lib/react';
-import Logo from './Logo';
-import Dialog from './Dialog';
+import Logo from '../components/Logo';
+import Dialog from '../components/Dialog';
 import Button from 'runtime-library/Button';
 export class SampleMFE extends React.Component {
   constructor(props) {

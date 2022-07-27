@@ -1,10 +1,11 @@
 const resolve = require("@rollup/plugin-node-resolve")
 const commonjs = require("@rollup/plugin-commonjs")
 const externals = require("rollup-plugin-node-externals")
-const babel = require('rollup-plugin-babel')
-const css = require('rollup-plugin-import-css')
-const pkg = require('./package.json')
-const rootPkg = require('../../package.json')
+const babel = require("rollup-plugin-babel")
+const css = require("rollup-plugin-import-css")
+const pkg = require("./package.json")
+const rootPkg = require("../../package.json")
+const path = require("path")
 
 module.exports = () => ({
     input: "src/index.jsx",
@@ -22,14 +23,13 @@ module.exports = () => ({
         externals({
             deps: true,
             peerDeps: true,
-            externals: rootPkg.dependencies
+            externals: rootPkg.dependencies,
         }),
-        babel({ 
-            exclude: 'node_modules/**',
-            presets: ['@babel/env', '@babel/preset-react']
+        commonjs(),
+        babel({
+            configFile: path.resolve(__dirname, "..", "..", "babel.config.js"),
         }),
         css(),
         resolve(),
-        commonjs(),
     ],
 })

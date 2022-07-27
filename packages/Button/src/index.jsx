@@ -25,7 +25,7 @@ const styleMapping = {
     cursor: 'pointer',
   },
 };
-export default class Button extends React.Component {
+export class Button extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -34,3 +34,5 @@ export default class Button extends React.Component {
     return <button style={styleMapping[type]} onClick={()=>console.log('clicked button')}>{type} Button</button>;
   }
 }
+
+export default Button

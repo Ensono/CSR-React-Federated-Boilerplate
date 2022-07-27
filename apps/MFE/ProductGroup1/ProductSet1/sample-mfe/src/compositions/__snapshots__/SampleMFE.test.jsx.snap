@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SampleMFE:  should match the snapshot for type = primary 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      src="this is a file path"
+      style="width: 500px; border-radius: 10px;"
+    />
+    <br />
+    <button
+      style="margin-left: 10px; color: rgb(255, 255, 255); background-color: rgb(64, 158, 255); padding: 12px 20px; font-size: 14px; border-radius: 4px; outline: none; border: 1px solid #dcdfe6; cursor: pointer;"
+    >
+      primary Button
+    </button>
+    <br />
+    <button>
+      click to open dialog
+    </button>
+  </div>
+</DocumentFragment>
+`;

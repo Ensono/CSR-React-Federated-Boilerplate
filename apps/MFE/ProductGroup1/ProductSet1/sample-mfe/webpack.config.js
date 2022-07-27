@@ -37,7 +37,7 @@ module.exports = {
       name: 'sample_mfe',
       filename: 'remoteEntry.js',
       exposes: {
-        './SampleMFE': './src/SampleMFE.jsx'
+        './SampleMFE': './src/compositions/SampleMFE.jsx'
       },
       remotes: {
         'runtime-library': 'runtime_library@http://localhost:3000/remoteEntry.js',

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components - Tooltip:  should match the snapshot 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #fff;
+  padding: 10px 16px;
+  border: 1px solid #dcdfe6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+}
+
+.emotion-0:before {
+  content: attr(data-content);
+  max-width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #303133;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 10px;
+  left: 50%;
+  bottom: 100%;
+  -webkit-transform: translate(-50%,-10px);
+  -moz-transform: translate(-50%,-10px);
+  -ms-transform: translate(-50%,-10px);
+  transform: translate(-50%,-10px);
+  display: none;
+}
+
+.emotion-0:after {
+  display: none;
+  content: "";
+  border: 6px solid transparent;
+  border-top-color: #303133;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  -webkit-transform: translate(-50%,2px);
+  -moz-transform: translate(-50%,2px);
+  -ms-transform: translate(-50%,2px);
+  transform: translate(-50%,2px);
+}
+
+.emotion-0:hover::after,
+.emotion-0:hover::before {
+  display: block;
+}
+
+<div
+    class="emotion-0"
+    data-content="this is true"
+  >
+    Batman is just a decent human
+  </div>
+</DocumentFragment>
+`;
