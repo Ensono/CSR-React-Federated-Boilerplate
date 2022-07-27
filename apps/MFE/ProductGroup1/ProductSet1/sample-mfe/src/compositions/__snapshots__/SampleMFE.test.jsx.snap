@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SampleMFE:  should match the snapshot for type = primary 1`] = `
+exports[`sample-mfe:  SampleMFE should match the snapshot for type = primary 1`] = `
 <DocumentFragment>
   <div>
     <img

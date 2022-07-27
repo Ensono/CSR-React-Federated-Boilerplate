@@ -10,14 +10,23 @@
   },
   "workspaces": [
     "./packages/*",
-    "./apps/**"
+    "./apps/**",
+    "./mocked_services"
   ],
   "scripts": {
     "postinstall": "npm run build:libs",
     "build:libs": "npm run build-lib -ws --if-present",
-    "start": "concurrently 'cd ./apps/MFE/ProductGroup1/ProductSet1/sample-mfe && npm run start' 'cd ./apps/runtime-library && npm run start' 'cd ./apps/pages/main-app && npm run start'",
+    "runtime-library:start": "npm run start -w=runtime-library",
+    "runtime-library:test": "npm run test -w=runtime-library",
+    "main-app:start": "npm run start -w=main-app",
+    "main-app:test": "npm run test -w=main-app",
+    "sample-mfe:start": "npm run start -w=sample-mfe",
+    "sample-mfe:test": "npm run test -w=sample-mfe",
+    "services:start": "npm run start -w=mocked-services",
+    "start": "concurrently 'npm run runtime-library:start' 'npm run main-app:start' 'npm run sample-mfe:start' 'npm run services:start'",
     "prepare": "npx is-ci || husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "test": "npm run test -ws -if-present"
   },
   "keywords": [],
   "author": "",

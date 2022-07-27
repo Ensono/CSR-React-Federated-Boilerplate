@@ -1,0 +1,109 @@
+{
+    "area": {
+        "name": "myArea",
+        "warehouses": [
+            {
+                "name": "Way",
+                "code": "XD",
+                "sorters": [
+                    {
+                        "name": "Sorter 6",
+                        "id": "123456",
+                        "packing_stations": [
+                            {
+                                "name": "pk1",
+                                "id":"1231245334",
+                                "status": 1 
+                            },
+                            {
+                                "name": "pk1",
+                                "id":"1231245334",
+                                "status": 6 
+                            },
+                            {
+                                "name": "pk2",
+                                "id":"34574567",
+                                "status": 9 
+                            },
+                            {
+                                "name": "pk2",
+                                "id":"34574567",
+                                "status": 11 
+                            }
+                        ],
+                        "induct_stations": [
+                            {
+                                "name": "in1",
+                                "id":"1231245334",
+                                "status": 1 
+                            },
+                            {
+                                "name": "in1",
+                                "id":"1231245334",
+                                "status": 6 
+                            },
+                            {
+                                "name": "in2",
+                                "id":"34574567",
+                                "status": 9 
+                            },
+                            {
+                                "name": "in2",
+                                "id":"34574567",
+                                "status": 11 
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sorter 5",
+                        "id": "1hgng56",
+                        "packing_stations": [
+                            {
+                                "name": "pk11",
+                                "id":"1231245334",
+                                "status": 1 
+                            },
+                            {
+                                "name": "pk12",
+                                "id":"1231245334",
+                                "status": 6 
+                            },
+                            {
+                                "name": "pk23",
+                                "id":"34574567",
+                                "status": 9 
+                            },
+                            {
+                                "name": "pk26",
+                                "id":"34574567",
+                                "status": 11 
+                            }
+                        ],
+                        "induct_stations": [
+                            {
+                                "name": "in11",
+                                "id":"1231245334",
+                                "status": 1 
+                            },
+                            {
+                                "name": "in12",
+                                "id":"1231245334",
+                                "status": 6 
+                            },
+                            {
+                                "name": "in23",
+                                "id":"34574567",
+                                "status": 9 
+                            },
+                            {
+                                "name": "in29",
+                                "id":"34574567",
+                                "status": 11 
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

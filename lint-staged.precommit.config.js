@@ -5,9 +5,9 @@ module.exports = {
         // "npm run jest-coverage-ratchet -w=runtime-library --",
     ],
     "apps/MFE/ProductGroup1/ProductSet1/sample-mfe/**/*.*": () => [
-        // "npm run lint -w=sample_mfe --",
-        "npm run test -w=sample_mfe -if-present -- --coverage --",
-        // "npm run jest-coverage-ratchet -w=sample_mfe --",
+        // "npm run lint -w=sample-mfe --",
+        "npm run test -w=sample-mfe -if-present -- --coverage --",
+        // "npm run jest-coverage-ratchet -w=sample-mfe --",
     ],
     "apps/pages/main-app/**/*.*": () => [
         // "npm run lint -w=main-app --",

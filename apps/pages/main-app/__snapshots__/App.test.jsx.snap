@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App:  should match the snapshot for type = primary 1`] = `
+exports[`main-app:  App should match the snapshot 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #fff;
@@ -85,7 +85,7 @@ exports[`App:  should match the snapshot for type = primary 1`] = `
       <p>
         MFE hosted on 
         <strong>
-          sample_mfe
+          sample-mfe
         </strong>
       </p>
       <div>

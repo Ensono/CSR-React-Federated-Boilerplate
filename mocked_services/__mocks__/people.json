@@ -1,0 +1,14 @@
+[ 
+    {
+        "name": "Mark Tinker",
+        "bonus_number": "A66",
+        "thumbnail": "https://whatever/image.png",
+        "assigned": "11"
+    },
+    {
+        "name": "Alessio Fimognari",
+        "bonus_number": "A11",
+        "thumbnail": "https://whatever/image1.png",
+        "assigned": null
+    }
+]

@@ -35,7 +35,7 @@ export default class App extends React.Component {
         </div>
         <div className="mfe-container" style={{ border: '1px solid hotpink' }}>
           <p>
-            MFE hosted on <strong>sample_mfe</strong>
+            MFE hosted on <strong>sample-mfe</strong>
           </p>
           <SampleMFE />
         </div>

@@ -1,0 +1,17 @@
+{
+    "date": "2022-06-20 13:01:59",
+    "induct_station": {
+        "name": "Elmsall Way Directory",
+        "code": "5",
+        "inducts": {
+            "11": {
+                "bonus_number": "A66",
+                "active_since": "2022-06-20 10:01:00",
+                "status": "active", 
+                "items_processed": 76,
+                "priority": 36,
+                "statuses": ["assigned", "removed", "active", "paused"]
+            }
+         }
+    }
+}

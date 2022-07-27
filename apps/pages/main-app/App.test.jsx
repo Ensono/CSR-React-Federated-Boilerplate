@@ -4,10 +4,10 @@ import App from './App'
 
 // jest.mock("sample-mfe/SampleMFE", () => jest.fn())
 
-describe("App: ", () => {
+describe("main-app: ", () => {
     let props = {type: 'primary'}
 
-    it("should match the snapshot for type = primary", () => {
+    it("App should match the snapshot", () => {
         const {asFragment} = render(
                 <App {...props} />
         )
