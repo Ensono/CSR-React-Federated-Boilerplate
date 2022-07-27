@@ -10,7 +10,8 @@
   "sideEffects": false,
   "scripts": {
     "test": "jest",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "lint": "eslint --ext .jsx,.js" 
   },
   "author": "",
   "license": "ISC"
