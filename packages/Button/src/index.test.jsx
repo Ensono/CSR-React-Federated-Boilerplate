@@ -1,20 +1,12 @@
 import React from "react"
 import {render} from "@testing-library/react"
-import {Button} from '.'
-
-// jest.mock("../../utils/autocomplete", () => {
-//     return {handleClick: jest.fn(), Focus: jest.fn(), handleKeyboardTapping: jest.fn()}
-// })
+import {Button} from "."
 
 describe("Components - Button: ", () => {
-    let props = {type: 'primary'}
+  const props = {type: "primary"}
 
-    it("should match the snapshot for type = primary", () => {
-        const {asFragment} = render(
-                <Button {...props} />
-        )
-        expect(asFragment()).toMatchSnapshot()
-    })
-
-    
+  it("should match the snapshot for type = primary", () => {
+    const {asFragment} = render(<Button {...props} />)
+    expect(asFragment()).toMatchSnapshot()
+  })
 })

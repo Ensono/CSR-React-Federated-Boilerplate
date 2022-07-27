@@ -11,7 +11,7 @@
   "scripts": {
     "test": "jest",
     "build-lib": "rollup -c",
-    "lint": "eslint --ext .jsx,.js"
+    "lint": "eslint --ext .jsx,.js src/"
   },
   "author": "",
   "license": "ISC"

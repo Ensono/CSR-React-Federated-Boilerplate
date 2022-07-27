@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled"
 
 export const TooltipComponent = styled.div`
     background-color: #fff;
@@ -19,21 +19,22 @@ export const TooltipComponent = styled.div`
         border-radius: 4px;
         padding: 10px;
         left: 50%;
-        bottom:100%;
-        transform: translate(-50%,-10px);
+        bottom: 100%;
+        transform: translate(-50%, -10px);
         display: none;
     }
-    &:after{
+    &:after {
         display: none;
         content: "";
         border: 6px solid transparent;
-        border-top-color:#303133;
+        border-top-color: #303133;
         position: absolute;
         left: 50%;
-        bottom:100%;
-        transform: translate(-50%,2px);
+        bottom: 100%;
+        transform: translate(-50%, 2px);
     }
-    &:hover::after, &:hover::before {
+    &:hover::after,
+    &:hover::before {
         display: block;
     }
-`;
+`

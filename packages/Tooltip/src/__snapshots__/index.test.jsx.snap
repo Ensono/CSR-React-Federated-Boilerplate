@@ -24,10 +24,10 @@ exports[`Components - Tooltip:  should match the snapshot 1`] = `
   padding: 10px;
   left: 50%;
   bottom: 100%;
-  -webkit-transform: translate(-50%,-10px);
-  -moz-transform: translate(-50%,-10px);
-  -ms-transform: translate(-50%,-10px);
-  transform: translate(-50%,-10px);
+  -webkit-transform: translate(-50%, -10px);
+  -moz-transform: translate(-50%, -10px);
+  -ms-transform: translate(-50%, -10px);
+  transform: translate(-50%, -10px);
   display: none;
 }
 
@@ -39,10 +39,10 @@ exports[`Components - Tooltip:  should match the snapshot 1`] = `
   position: absolute;
   left: 50%;
   bottom: 100%;
-  -webkit-transform: translate(-50%,2px);
-  -moz-transform: translate(-50%,2px);
-  -ms-transform: translate(-50%,2px);
-  transform: translate(-50%,2px);
+  -webkit-transform: translate(-50%, 2px);
+  -moz-transform: translate(-50%, 2px);
+  -ms-transform: translate(-50%, 2px);
+  transform: translate(-50%, 2px);
 }
 
 .emotion-0:hover::after,

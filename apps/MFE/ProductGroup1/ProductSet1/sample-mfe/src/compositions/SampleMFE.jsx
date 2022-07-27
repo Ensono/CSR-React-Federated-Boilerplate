@@ -1,7 +1,8 @@
-import React from 'runtime-library/lib/react'
-import Logo from '../components/Logo'
-import Dialog from '../components/Dialog'
-import Button from 'runtime-library/Button'
+import React from "runtime-library/lib/react"
+import Button from "runtime-library/Button"
+import Logo from "../components/Logo"
+import Dialog from "../components/Dialog"
+
 export class SampleMFE extends React.Component {
   constructor(props) {
     super(props)
@@ -11,17 +12,20 @@ export class SampleMFE extends React.Component {
     this.handleClick = this.handleClick.bind(this)
     this.HanldeSwitchVisible = this.HanldeSwitchVisible.bind(this)
   }
+
   handleClick(ev) {
     console.log(ev)
     this.setState({
       dialogVisible: true,
     })
   }
+
   HanldeSwitchVisible(visible) {
     this.setState({
       dialogVisible: visible,
     })
   }
+
   render() {
     return (
       <div>
@@ -30,7 +34,9 @@ export class SampleMFE extends React.Component {
         <Button />
         <br />
 
-        <button onClick={this.handleClick}>click to open dialog</button>
+        <button type="button" onClick={this.handleClick}>
+          click to open dialog
+        </button>
         <Dialog switchVisible={this.HanldeSwitchVisible} visible={this.state.dialogVisible} />
       </div>
     )

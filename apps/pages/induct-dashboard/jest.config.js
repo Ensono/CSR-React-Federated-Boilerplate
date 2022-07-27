@@ -1,5 +1,5 @@
 const parentConfig = require("../../../jest.config")
-const path = require("path")
+// const path = require("path")
 
 module.exports = {
     ...parentConfig,

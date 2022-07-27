@@ -4,6 +4,7 @@ exports[`sample-mfe:  SampleMFE should match the snapshot for type = primary 1`]
 <DocumentFragment>
   <div>
     <img
+      alt="test"
       src="this is a file path"
       style="width: 500px; border-radius: 10px;"
     />
@@ -14,7 +15,9 @@ exports[`sample-mfe:  SampleMFE should match the snapshot for type = primary 1`]
       primary Button
     </button>
     <br />
-    <button>
+    <button
+      type="button"
+    >
       click to open dialog
     </button>
   </div>
