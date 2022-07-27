@@ -4,7 +4,7 @@ import App from './App'
 
 // jest.mock("sample-mfe/SampleMFE", () => jest.fn())
 
-describe("main-app: ", () => {
+describe("area-dashboard: ", () => {
     let props = {type: 'primary'}
 
     it("App should match the snapshot", () => {

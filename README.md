@@ -16,11 +16,11 @@ It is a pure `remote`
 
 ## sample-mfe
 
-It is a micro-frontend app, which depends on modules exposed from `runtime-library` : `react` ,`react-dom` `Button` and `Tooltip`. In the meantime, it also exposes a composition called `SampleMFE` to another app called `main-app`.
+It is a micro-frontend app, which depends on modules exposed from `runtime-library` : `react` ,`react-dom` `Button` and `Tooltip`. In the meantime, it also exposes a composition called `SampleMFE` to another app called `area-dashboard`.
 
 It is both host and remote.
 
-## main-app
+## area-dashboard
 
 the top-level app, which depends on `runtime-library` and `sample-mfe`.
 

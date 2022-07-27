@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'main_app',
+      name: 'area_dashboard',
       remotes: {
         'runtime-library': 'runtime_library@http://localhost:3000/remoteEntry.js',
         'sample-mfe': 'sample_mfe@http://localhost:3001/remoteEntry.js',
