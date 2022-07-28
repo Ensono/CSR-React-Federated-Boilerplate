@@ -1,0 +1,18 @@
+{
+  "name": "@next/logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "module": "./lib/index.es.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest",
+    "build-lib": "rollup -c",
+    "lint": "eslint --ext .jsx,.js src/"
+  },
+  "author": "",
+  "license": "ISC"
+}

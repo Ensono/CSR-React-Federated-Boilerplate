@@ -1,5 +1,6 @@
 const {ModuleFederationPlugin} = require("webpack").container
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const appInsightScript = require("@next/logger").APPINSIGHTS_SCRIPT
 // const path = require("path")
 
 module.exports = {
@@ -40,6 +41,9 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
+            appInsightScript: process.env.REACT_APP_APPINSIGHTS_KEY
+                ? appInsightScript(process.env.REACT_APP_APPINSIGHTS_KEY)
+                : "",
         }),
     ],
 }

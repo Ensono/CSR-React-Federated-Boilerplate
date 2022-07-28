@@ -26,6 +26,7 @@ module.exports = {
                 "./lib/@mui/material/Menu": "@mui/material/Menu",
                 "./lib/@mui/material/MenuItem": "@mui/material/MenuItem",
                 "./lib/@mui/icons-material/Menu": "@mui/icons-material/Menu",
+                "./Logger": "@next/logger",
                 "./Tooltip": "@next/tooltip",
                 "./Button": "@next/button",
                 "./lib/react": "react",

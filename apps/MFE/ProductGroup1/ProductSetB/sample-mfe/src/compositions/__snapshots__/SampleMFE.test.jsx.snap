@@ -11,6 +11,7 @@ exports[`sample-mfe:  SampleMFE should match the snapshot for type = primary 1`]
     <br />
     <button
       style="margin-left: 10px; color: rgb(255, 255, 255); background-color: rgb(64, 158, 255); padding: 12px 20px; font-size: 14px; border-radius: 4px; outline: none; border: 1px solid #dcdfe6; cursor: pointer;"
+      type="button"
     >
       primary Button
     </button>

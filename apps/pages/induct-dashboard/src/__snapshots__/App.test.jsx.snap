@@ -24,10 +24,10 @@ exports[`induct-dashboard:  App should match the snapshot 1`] = `
   padding: 10px;
   left: 50%;
   bottom: 100%;
-  -webkit-transform: translate(-50%,-10px);
-  -moz-transform: translate(-50%,-10px);
-  -ms-transform: translate(-50%,-10px);
-  transform: translate(-50%,-10px);
+  -webkit-transform: translate(-50%, -10px);
+  -moz-transform: translate(-50%, -10px);
+  -ms-transform: translate(-50%, -10px);
+  transform: translate(-50%, -10px);
   display: none;
 }
 
@@ -39,10 +39,10 @@ exports[`induct-dashboard:  App should match the snapshot 1`] = `
   position: absolute;
   left: 50%;
   bottom: 100%;
-  -webkit-transform: translate(-50%,2px);
-  -moz-transform: translate(-50%,2px);
-  -ms-transform: translate(-50%,2px);
-  transform: translate(-50%,2px);
+  -webkit-transform: translate(-50%, 2px);
+  -moz-transform: translate(-50%, 2px);
+  -ms-transform: translate(-50%, 2px);
+  transform: translate(-50%, 2px);
 }
 
 .emotion-0:hover::after,
@@ -66,11 +66,13 @@ exports[`induct-dashboard:  App should match the snapshot 1`] = `
       </p>
       <button
         style="margin-left: 10px; color: rgb(255, 255, 255); background-color: rgb(64, 158, 255); padding: 12px 20px; font-size: 14px; border-radius: 4px; outline: none; border: 1px solid #dcdfe6; cursor: pointer;"
+        type="button"
       >
         primary Button
       </button>
       <button
         style="margin-left: 10px; color: rgb(255, 255, 255); background-color: rgb(230, 162, 60); padding: 12px 20px; font-size: 14px; border-radius: 4px; outline: none; border: 1px solid #dcdfe6; cursor: pointer;"
+        type="button"
       >
         warning Button
       </button>
