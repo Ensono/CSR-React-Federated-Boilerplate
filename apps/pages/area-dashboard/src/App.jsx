@@ -17,8 +17,8 @@ export default class App extends React.Component {
           <p>
             react、react-dom, Tooltip and Button js files hosted on <strong>runtime-library</strong>
           </p>
-          <Button type="primary" />
-          <Button type="warning" />
+          <Button type="primary"> THIS IS A MASSIVE BUTTON</Button>
+          <Button type="warning">warning button</Button>
           <Tooltip content="hover me please" message="Hello,world!" />
         </div>
         <div className="mfe-container" style={{border: "1px solid hotpink"}}>
