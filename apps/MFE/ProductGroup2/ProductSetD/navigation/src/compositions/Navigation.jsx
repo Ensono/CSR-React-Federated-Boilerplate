@@ -11,6 +11,7 @@ import Link from "runtime-library/lib/@mui/material/Link"
 
 export function Navigation(props) {
   const [anchorElUser, setAnchorElUser] = React.useState(null)
+  console.log("test")
   const links = [
     {
       name: "Induct Dashboard",
@@ -22,6 +23,10 @@ export function Navigation(props) {
     },
     {
       name: "Area Dashboard",
+      url: "http://localhost:3002",
+    },
+    {
+      name: "Efthy Dashboard",
       url: "http://localhost:3002",
     },
   ]
