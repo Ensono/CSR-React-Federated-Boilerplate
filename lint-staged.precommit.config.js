@@ -9,6 +9,11 @@ module.exports = {
         "npm run test -w=sample-mfe -if-present -- --coverage --",
         // "npm run jest-coverage-ratchet -w=sample-mfe --",
     ],
+    "apps/MFE/ProductGroup2/ProductSetD/navigation/**/*.*": () => [
+        "npm run lint -w=navigation --",
+        "npm run test -w=navigation -if-present -- --coverage --",
+        // "npm run jest-coverage-ratchet -w=navigation --",
+    ],
     "apps/pages/area-dashboard/**/*.*": () => [
         "npm run lint -w=area-dashboard --",
         "npm run test -w=area-dashboard -if-present -- --coverage --",
